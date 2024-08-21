@@ -1,0 +1,12 @@
+  /* Section Selector Styles*/
+
+
+
+  /* Section Class Styles */
+
+  .sports-Betting-Background {
+    background-image: url(./images/Downloads/SportsBettingBackground.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
