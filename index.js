@@ -34,14 +34,15 @@ function drawTeam1() {
 
     let teamPlayer = players[i]
 
-    teamPlayerOne = teamPlayer.emoji
-
     if (teamPlayer.teamNumber == 1) {
 
-      let team1Container = document.getElementById('team1');
-      team1Container.innerHTML = teamPlayerOne;
+      teamPlayerOne += teamPlayer.emoji
 
     }
+
+    let team1Container = document.getElementById('team1');
+    team1Container.innerHTML = teamPlayerOne;
+
   }
 }
 
@@ -52,13 +53,14 @@ function drawTeam2() {
 
     let teamPlayer = players[i]
 
-    teamPlayerTwo = teamPlayer.emoji
-
     if (teamPlayer.teamNumber == 2) {
 
-      let team1Container = document.getElementById('team1');
-      team1Container.innerHTML = teamPlayerTwo;
+      teamPlayerTwo += teamPlayer.emoji
 
     }
+
+    let team1Container = document.getElementById('team2');
+    team1Container.innerHTML = teamPlayerTwo;
+
   }
 }
