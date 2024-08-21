@@ -42,9 +42,6 @@ function drawTeam1() {
       team1Container.innerHTML = teamPlayerOne;
 
     }
-
-
-
   }
 }
 
