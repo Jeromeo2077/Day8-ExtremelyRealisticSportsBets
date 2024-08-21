@@ -1,6 +1,6 @@
 /*!SECTION Account Value*/
 
-let bank = 20,000,000
+let bank = 20000000
 
 /*!SECTION Array for team players*/
 
@@ -26,3 +26,42 @@ const players = [
   { teamNumber: 2, emoji: '🧍‍♂️', skill: 3, name: "Dan Smith" },
   { teamNumber: 2, emoji: '🐅', skill: 100, name: "Tiger" },
 ]
+
+function drawTeam1() {
+  let teamPlayerOne = ''
+
+  for (let i = 0; i < players.length; i++) {
+
+    let teamPlayer = players[i]
+
+    teamPlayerOne = teamPlayer.emoji
+
+    if (teamPlayer.teamNumber == 1) {
+
+      let team1Container = document.getElementById('team1');
+      team1Container.innerHTML = teamPlayerOne;
+
+    }
+
+
+
+  }
+}
+
+function drawTeam2() {
+  let teamPlayerTwo = ''
+
+  for (let i = 0; i < players.length; i++) {
+
+    let teamPlayer = players[i]
+
+    teamPlayerTwo = teamPlayer.emoji
+
+    if (teamPlayer.teamNumber == 2) {
+
+      let team1Container = document.getElementById('team1');
+      team1Container.innerHTML = teamPlayerTwo;
+
+    }
+  }
+}
