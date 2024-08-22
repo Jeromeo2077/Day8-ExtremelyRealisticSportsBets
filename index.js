@@ -64,3 +64,19 @@ function drawTeam2() {
 
   }
 }
+
+function betTeam1() {
+  let teamOneTotalSkill = 0
+
+  const teamOne = players.filter(player => player.teamNumber == 1)
+
+  teamOne.forEach((p) => teamOneTotalSkill += p.skill)
+
+
+  console.log(teamOneTotalSkill)
+
+
+
+
+
+}
